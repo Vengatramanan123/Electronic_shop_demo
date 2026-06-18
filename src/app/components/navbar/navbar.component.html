@@ -1,0 +1,19 @@
+<header class="navbar" [class.scrolled]="isScrolled">
+  <div class="container">
+    <a href="#" class="logo">
+      <span class="logo-icon">⚡</span>
+      <span>TechFix <strong>Pro</strong></span>
+    </a>
+
+    <nav class="nav-links" [class.open]="menuOpen">
+      <a href="#services" (click)="closeMenu()">Services</a>
+      <a href="#about" (click)="closeMenu()">About</a>
+      <a href="#contact" (click)="closeMenu()">Contact</a>
+      <a href="#contact" class="btn btn-primary" (click)="closeMenu()">Get a Quote</a>
+    </nav>
+
+    <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>

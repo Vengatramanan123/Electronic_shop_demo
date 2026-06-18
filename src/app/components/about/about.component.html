@@ -1,0 +1,29 @@
+<section class="section about-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="badge">About Us</span>
+        <h2>Chennai's Most Trusted Electronics Repair Shop</h2>
+        <p>Since 2010, TechFix Pro has been providing top-quality electronic repair services to homes and businesses across Chennai. Our certified technicians bring years of hands-on experience and use only genuine parts.</p>
+        <p>We believe in transparent pricing — no hidden charges, free diagnosis, and a clear quote before we start any repair.</p>
+
+        <div class="features">
+          <div class="feature" *ngFor="let f of features">
+            <div class="feature-icon">{{ f.icon }}</div>
+            <div>
+              <h4>{{ f.title }}</h4>
+              <p>{{ f.desc }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-cards">
+        <div class="stat-card" *ngFor="let stat of stats">
+          <span class="num">{{ stat.num }}</span>
+          <span class="label">{{ stat.label }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
