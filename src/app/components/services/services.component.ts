@@ -9,8 +9,8 @@ export class ServicesComponent {
   services = [
     {
       icon: '🔧',
-      title: 'Installation & Uninstallation',
-      description: 'Professional installation and uninstallation of washing machines.',
+      title: 'Installation',
+      description: 'Professional installation of washing machines.',
       items: ['Drilling & pipe fitting', 'Water inlet setup', 'Drainage connection', 'Testing & demo'],
       
     },
@@ -18,7 +18,7 @@ export class ServicesComponent {
       icon: '🛠️',
       title: 'General Service & Maintenance',
       description: 'Regular maintenance to keep your washing machine running smoothly.',
-      items: ['Cleaning & descaling', 'Filter cleaning', 'Belt tension check', 'Motor lubrication'],
+      items: ['Cleaning & descaling', 'Filter cleaning', 'Belt tension check'],
       
     },
     {
@@ -30,7 +30,7 @@ export class ServicesComponent {
     },
     {
       icon: '⚙️',
-      title: 'Motor Repair & Replacement',
+      title: 'Motor Replacement',
       description: 'Motor issues diagnosed and fixed with genuine parts.',
       items: ['Motor winding repair', 'Bearing replacement', 'Motor oil change', 'Full replacement'],
       
