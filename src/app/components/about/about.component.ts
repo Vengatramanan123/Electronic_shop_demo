@@ -7,16 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   features = [
-    { icon: '🔍', title: 'Free Diagnosis', desc: 'Bring your device in — we inspect it at no charge.' },
-    { icon: '🛡️', title: '1-Year Warranty', desc: 'All repairs are backed by a full one-year warranty.' },
-    { icon: '⚡', title: 'Same-Day Service', desc: 'Most common repairs are done within a few hours.' },
-    { icon: '💳', title: 'Transparent Pricing', desc: 'You get a full quote before we start any work.' }
+    { icon: '🏠', title: 'Home Service Available', desc: 'Doorstep washing machine service in Chennai.' },
+    { icon: '📦', title: 'Genuine Spare Parts', desc: 'Original parts with manufacturer warranty.' },
+    { icon: '⚡', title: 'Quick Service', desc: 'Same day service for common repairs.' },
+    { icon: '💰', title: 'Transparent Pricing', desc: 'No hidden charges, clear quote upfront.' }
   ];
 
   stats = [
-    { num: '15,000+', label: 'Devices Repaired' },
-    { num: '14 Years', label: 'In Business' },
-    { num: '4.9 / 5', label: 'Google Rating' },
-    { num: '98%', label: 'Customer Satisfaction' }
+    { num: '10+', label: 'Years Experience' },
+    { num: '★ 4.5 / 5', label: 'Customer Ratings' },
+    { num: 'Chennai', label: 'Location' },
+    { num: '24 Hrs', label: 'Emergency Service' }
   ];
 }

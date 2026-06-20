@@ -8,46 +8,67 @@ import { Component } from '@angular/core';
 export class ServicesComponent {
   services = [
     {
-      icon: '📱',
-      title: 'Smartphone Repair',
-      description: 'Fast fixes for all major brands including Apple, Samsung, and more.',
-      items: ['Screen replacement', 'Battery replacement', 'Charging port fix', 'Water damage'],
-      price: '₹499'
+      icon: '🔧',
+      title: 'Installation & Uninstallation',
+      description: 'Professional installation and uninstallation of washing machines.',
+      items: ['Drilling & pipe fitting', 'Water inlet setup', 'Drainage connection', 'Testing & demo'],
+      
     },
     {
-      icon: '💻',
-      title: 'Laptop Repair',
-      description: 'Professional diagnosis and repair for all laptop makes and models.',
-      items: ['Screen replacement', 'Keyboard repair', 'RAM / SSD upgrade', 'Motherboard repair'],
-      price: '₹799'
-    },
-    {
-      icon: '📺',
-      title: 'TV & Display',
-      description: 'Expert repair for LED, LCD, OLED and Smart TVs of all brands.',
-      items: ['Screen panel fix', 'Power board repair', 'Remote issues', 'Software update'],
-      price: '₹999'
-    },
-    {
-      icon: '🖨️',
-      title: 'Printers & Scanners',
-      description: 'Servicing inkjet, laser, and multifunction devices.',
-      items: ['Head cleaning', 'Paper jam fix', 'Driver install', 'Cartridge setup'],
-      price: '₹399'
-    },
-    {
-      icon: '🎮',
-      title: 'Gaming Consoles',
-      description: 'Repair and servicing for PlayStation, Xbox, Nintendo, and more.',
-      items: ['Disc drive repair', 'Controller fix', 'HDMI port fix', 'Overheating fix'],
-      price: '₹699'
+      icon: '🛠️',
+      title: 'General Service & Maintenance',
+      description: 'Regular maintenance to keep your washing machine running smoothly.',
+      items: ['Cleaning & descaling', 'Filter cleaning', 'Belt tension check', 'Motor lubrication'],
+      
     },
     {
       icon: '🔌',
-      title: 'Home Electronics',
-      description: 'General servicing for all other household electronic devices.',
-      items: ['Air coolers & fans', 'Audio systems', 'Microwave ovens', 'Set-top boxes'],
-      price: '₹299'
+      title: 'PCB Repair',
+      description: 'Electronic board repair for all washing machine brands.',
+      items: ['Circuit diagnosis', 'Component replacement', 'Programming fix', 'Tested working'],
+      
+    },
+    {
+      icon: '⚙️',
+      title: 'Motor Repair & Replacement',
+      description: 'Motor issues diagnosed and fixed with genuine parts.',
+      items: ['Motor winding repair', 'Bearing replacement', 'Motor oil change', 'Full replacement'],
+      
+    },
+    {
+      icon: '💧',
+      title: 'Water Leakage Fixing',
+      description: 'Identify and fix any water leakage problems.',
+      items: ['Leak detection', 'Hose replacement', 'Drum seal fix', 'Inlet valve repair'],
+      
+    },
+    {
+      icon: '🌀',
+      title: 'Spin & Dryer Issues',
+      description: 'Fix spinning problems and dryer malfunctions.',
+      items: ['Spin motor repair', 'Drum issue fix', 'Timer adjustment', 'Noise reduction'],
+     
+    },
+    {
+      icon: '🔒',
+      title: 'Door Lock & Sensor Problems',
+      description: 'Door lock and sensor repair for front load machines.',
+      items: ['Lock mechanism fix', 'Sensor calibration', 'Safety check', 'Latch replacement'],
+      
+    },
+    {
+      icon: '🏠',
+      title: 'Home Service',
+      description: 'Doorstep service available in Ambattur.',
+      items: ['At your home', 'Same day visit', 'No extra charge', 'Quick resolution'],
+     
+    },
+    {
+      icon: '📦',
+      title: 'Genuine Spare Parts',
+      description: 'Original spare parts with warranty.',
+      items: ['Manufacturer warranty', 'Best prices', 'Quick delivery', 'Quality assured'],
+      
     }
   ];
 }

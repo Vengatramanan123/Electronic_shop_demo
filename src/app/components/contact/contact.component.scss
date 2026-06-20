@@ -10,85 +10,50 @@
   }
 }
 
-.contact-info {
-  .info-card {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    padding: 20px 0;
-    border-bottom: 1px solid #f1f5f9;
-
-    &:first-child { padding-top: 0; }
-
-    .info-icon { font-size: 1.4rem; margin-top: 2px; flex-shrink: 0; }
-
-    h4 {
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: #64748b;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 4px;
-    }
-
-    p {
-      font-size: 0.95rem;
-      color: #334155;
-      line-height: 1.6;
-    }
-  }
-
-  .map-placeholder {
-    margin-top: 24px;
+.contact-map {
+  iframe {
     border-radius: 12px;
-    overflow: hidden;
     border: 1px solid #e2e8f0;
   }
 }
 
-.contact-form {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 20px;
-  padding: 36px;
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 
-  .success-msg {
-    background: #f0fdf4;
-    border: 1px solid #86efac;
-    color: #166534;
-    border-radius: 8px;
-    padding: 14px 16px;
-    font-size: 0.92rem;
-    margin-bottom: 24px;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  .info-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
   }
 
-  .form-group {
-    margin-bottom: 20px;
+  h4 {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
 
-    label {
-      display: block;
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: #334155;
-      margin-bottom: 8px;
-    }
-
-    input, textarea, select {
-      width: 100%;
-      padding: 11px 16px;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.93rem;
-      color: #334155;
-      background: #fff;
-      outline: none;
-      transition: border-color 0.2s;
-
-      &::placeholder { color: #94a3b8; }
-      &:focus { border-color: #1a73e8; box-shadow: 0 0 0 3px rgba(26,115,232,0.1); }
-    }
-
-    textarea { resize: vertical; }
+  p {
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.6;
+    margin: 0;
   }
 }

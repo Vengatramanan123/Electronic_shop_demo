@@ -17,10 +17,9 @@ export class ContactComponent {
   };
 
   contactInfo = [
-    { icon: '📍', label: 'Address', value: '45, Anna Salai, Teynampet<br>Chennai - 600 018, Tamil Nadu' },
-    { icon: '📞', label: 'Phone', value: '+91 98765 43210 &nbsp;|&nbsp; +91 44 2345 6789' },
-    { icon: '✉️', label: 'Email', value: 'support@techfixpro.in' },
-    { icon: '🕐', label: 'Working Hours', value: 'Mon – Sat: 9:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 5:00 PM' }
+    { icon: '📍', label: 'Address', value: 'Ambattur, Chennai<br>Tamil Nadu' },
+    { icon: '📞', label: 'Phone', value: 'Veeramani<br>94879 08765 &nbsp;<br> 73738 88126' },
+    { icon: '🕐', label: 'Working Hours', value: 'Mon – Sat<br> 9:00 AM – 8:00 PM<br>Sunday<br> 10:00 AM – 5:00 PM' }
   ];
 
   onSubmit() {

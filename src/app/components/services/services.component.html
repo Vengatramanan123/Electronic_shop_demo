@@ -1,8 +1,8 @@
 <section class="section" id="services">
   <div class="container">
-    <p class="badge">What We Fix</p>
-    <h2 class="section-title">Our Repair Services</h2>
-    <p class="section-subtitle">We handle all kinds of electronic repairs with genuine parts and skilled technicians.</p>
+    <p class="badge">Our Services</p>
+    <h2 class="section-title">VM WashCare Services</h2>
+    <p class="section-subtitle">Professional washing machine repair and maintenance services.</p>
 
     <div class="services-grid">
       <div class="service-card" *ngFor="let service of services">
@@ -12,7 +12,7 @@
         <ul>
           <li *ngFor="let item of service.items">✓ {{ item }}</li>
         </ul>
-        <div class="service-price">Starting from <strong>{{ service.price }}</strong></div>
+        <!-- <div class="service-price">Starting from <strong>{{ service.price }}</strong></div> -->
       </div>
     </div>
   </div>
