@@ -54,7 +54,8 @@
               "src/favicon.ico",
               "src/assets",
               "src/robots.txt",
-              "src/sitemap.xml"
+              "src/sitemap.xml",
+              "src/google06dd0cd7869c0db7.html" 
             ],
             "styles": [
               "src/styles.scss"
