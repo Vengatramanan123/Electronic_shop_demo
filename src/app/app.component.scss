@@ -17,9 +17,10 @@
   box-shadow: var(--shadow);
   transition: all 0.2s;
   z-index: 1000;
+  animation: float 3s ease-in-out infinite;
 
   &:hover {
     background: var(--primary-dark);
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 }

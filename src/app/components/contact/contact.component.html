@@ -1,36 +1,52 @@
-<section class="section" id="contact">
+<section class="section" id="contact" aria-label="Contact VM WashCare Chennai">
   <div class="container">
     <span class="badge">Get In Touch</span>
-    <h2 class="section-title">Contact VM WashCare</h2>
+    <h2 class="section-title">Book Washing Machine Service in Chennai</h2>
     <p class="section-subtitle">
-      Call us for washing machine service. We provide doorstep service in Chennai.
+      Call or WhatsApp us for same-day doorstep washing machine repair in Chennai – Ambattur, Anna Nagar, Padi &amp; nearby areas.
     </p>
 
     <div class="contact-grid">
-
-      <!-- Left Side - Map -->
-      <div class="contact-map">
+      <div class="contact-map reveal-left">
+        <!-- <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80" alt="Washing machine repair service" loading="lazy"> -->
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.886539092!2d80.07193!3d13.0478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sAmbattur%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1699000000000"
           width="100%"
           height="300"
           style="border:0; border-radius:12px;"
           allowfullscreen=""
-          loading="lazy">
+          loading="lazy"
+          title="VM WashCare Location – Ambattur, Chennai">
         </iframe>
       </div>
 
-      <!-- Right Side - Contact Details -->
-      <div class="contact-details">
-        <div class="info-card" *ngFor="let info of contactInfo">
-          <div class="info-icon">{{ info.icon }}</div>
+      <div class="contact-details" itemscope itemtype="https://schema.org/LocalBusiness">
+        <meta itemprop="name" content="VM WashCare">
+        <meta itemprop="telephone" content="+917373888126">
+        <div class="info-card reveal-up" *ngFor="let info of contactInfo; let i = index" [ngStyle]="{'--delay': (i * 0.05) + 's'}">
+          <div class="info-icon" aria-hidden="true">{{ info.icon }}</div>
           <div>
             <h4>{{ info.label }}</h4>
             <p [innerHTML]="info.value"></p>
           </div>
         </div>
+        <div style="margin-top: 1.5rem;" class="reveal-up">
+          <a href="tel:7373888126" class="btn btn-accent" style="display:inline-block; margin-right:0.75rem; margin-bottom:0.5rem;" aria-label="Call VM WashCare">📞 Call Now</a>
+          <a href="https://wa.me/919487908765?text=Hi%20VM%20WashCare%2C%20I%20need%20washing%20machine%20service." target="_blank" rel="noopener" class="btn btn-outline" aria-label="WhatsApp VM WashCare">💬 WhatsApp</a>
+        </div>
       </div>
 
     </div>
+
+    <div class="faq-section reveal-up" style="margin-top: 3rem;">
+      <h3 style="text-align:center; margin-bottom:1.5rem;">Frequently Asked Questions</h3>
+      <div class="faq-grid">
+        <div class="faq-item" *ngFor="let faq of faqs; let i = index" [ngStyle]="{'--delay': (i * 0.05) + 's'}">
+          <h4>{{ faq.q }}</h4>
+          <p>{{ faq.a }}</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>

@@ -1,7 +1,29 @@
+.services-header-img {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow);
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+
+    @media (max-width: 600px) {
+      height: 160px;
+    }
+  }
+}
+
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .service-card {
@@ -10,11 +32,38 @@
   border-radius: 16px;
   padding: 28px;
   transition: all 0.3s;
+  transition-delay: var(--delay, 0s);
 
   &:hover {
     border-color: #1a73e8;
     box-shadow: 0 8px 32px rgba(26, 115, 232, 0.12);
     transform: translateY(-4px);
+  }
+
+  .service-img {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    height: 180px;
+
+    @media (max-width: 600px) {
+      height: 160px;
+    }
+
+    @media (max-width: 480px) {
+      height: 180px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s;
+    }
+  }
+
+  &:hover .service-img img {
+    transform: scale(1.05);
   }
 
   .service-icon {
@@ -58,4 +107,72 @@
       font-size: 1rem;
     }
   }
+}
+
+.service-banner {
+  margin-top: 60px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+
+  img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+
+    @media (max-width: 600px) {
+      height: 280px;
+    }
+
+    @media (max-width: 480px) {
+      height: 350px;
+    }
+  }
+
+  .banner-content {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.4) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    color: #fff;
+
+    @media (max-width: 768px) {
+      padding: 24px;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+
+      @media (max-width: 600px) {
+        font-size: 1.3rem;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      max-width: 400px;
+      opacity: 0.9;
+
+      @media (max-width: 480px) {
+        font-size: 0.95rem;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .service-banner .banner-content {
+    padding: 24px;
+    h3 { font-size: 1.2rem; }
+  }
+  .service-card .service-img { height: 140px; }
 }

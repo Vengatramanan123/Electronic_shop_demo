@@ -1,18 +1,29 @@
-<section class="section" id="services">
+<section class="section" id="services" aria-label="Washing Machine Repair Services in Chennai">
   <div class="container">
     <p class="badge">Our Services</p>
-    <h2 class="section-title">VM WashCare Services</h2>
-    <p class="section-subtitle">Professional washing machine repair and maintenance services.</p>
+    <h2 class="section-title">Washing Machine Repair & Service in Chennai</h2>
+    <p class="section-subtitle">Expert washing machine repair and maintenance services for all brands in Chennai – IFB, LG, Samsung, Bosch, Whirlpool and more.</p>
+
+    <!-- <div class="services-header-img reveal-scale">
+      <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=80" alt="Washing machine repair technician" loading="lazy">
+    </div> -->
 
     <div class="services-grid">
-      <div class="service-card" *ngFor="let service of services">
-        <div class="service-icon">{{ service.icon }}</div>
-        <h3>{{ service.title }}</h3>
-        <p>{{ service.description }}</p>
+      <div class="service-card reveal-up" *ngFor="let service of services; let i = index" itemscope itemtype="https://schema.org/Service" [ngStyle]="{'--delay': (i * 0.05) + 's'}">
+        <h3 itemprop="name">{{ service.title }}</h3>
+        <p itemprop="description">{{ service.description }}</p>
         <ul>
           <li *ngFor="let item of service.items">✓ {{ item }}</li>
         </ul>
-        <!-- <div class="service-price">Starting from <strong>{{ service.price }}</strong></div> -->
+      </div>
+    </div>
+
+    <div class="service-banner reveal-up">
+      <img src="/assets/Technician repairing washing machine.png" alt="Professional washing machine service" loading="lazy">
+      <div class="banner-content">
+        <h3 style="color: white;">Need Same-Day Service?</h3>
+        <p>We provide doorstep washing machine repair & cleaning across Chennai. Call now!</p>
+        <a href="tel:7373888126" class="btn btn-accent">📞 Call: 73738 88126</a>
       </div>
     </div>
   </div>

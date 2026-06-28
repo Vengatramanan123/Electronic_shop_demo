@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
-  align-items: center;
+  align-items: start;
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
@@ -61,35 +61,102 @@
   }
 }
 
-.about-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.about-images {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
-  .stat-card {
-    background: #fff;
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 32px 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
-    transition: box-shadow 0.2s;
+  @media (max-width: 900px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
 
-    &:hover {
-      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img-main {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+
+    @media (max-width: 900px) {
+      grid-column: 1 / -1;
     }
 
-    .num {
-      font-size: 1.8rem;
-      font-weight: 800;
-      color: #1a73e8;
-    }
+    img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s;
 
-    .label {
-      font-size: 0.85rem;
-      color: #64748b;
+      @media (max-width: 900px) {
+        height: 220px;
+      }
+
+      @media (max-width: 480px) {
+        height: 200px;
+      }
+
+      &:hover {
+        transform: scale(1.03);
+      }
     }
   }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      text-align: center;
+      transition: box-shadow 0.2s, transform 0.2s;
+
+      &:hover {
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        transform: translateY(-2px);
+      }
+
+      .num {
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: #1a73e8;
+
+        @media (max-width: 480px) {
+          font-size: 1.2rem;
+        }
+      }
+
+      .label {
+        font-size: 0.82rem;
+        color: #64748b;
+
+        @media (max-width: 480px) {
+          font-size: 0.78rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .about-images { order: -1; }
 }

@@ -1,15 +1,15 @@
-<section class="section about-section" id="about">
+<section class="section about-section" id="about" aria-label="About VM WashCare">
   <div class="container">
     <div class="about-grid">
-      <div class="about-text">
+      <div class="about-text reveal-right">
         <span class="badge">About VM WashCare</span>
-        <h2>Trusted Washing Machine Service Center</h2>
-        <p>With 10+ years of experience, VM WashCare specializes in servicing IFB, Bosch, LG and Samsung washing machines.</p>
-        <p>We provide home service with genuine spare parts and transparent pricing. No hidden charges, free diagnosis, and professional technicians.</p>
+        <h2>Best Washing Machine Service Center in Chennai</h2>
+        <p>With <strong>10+ years of experience</strong>, VM WashCare is a trusted washing machine repair and service center in <strong>Ambattur, Chennai</strong>. We specialize in servicing <strong>IFB, Bosch, LG and Samsung</strong> washing machines — both front-load and top-load.</p>
+        <p>We offer <strong>doorstep home service</strong> with genuine spare parts and transparent pricing. No hidden charges, free diagnosis, and trained professional technicians at your convenience.</p>
 
         <div class="features">
           <div class="feature" *ngFor="let f of features">
-            <div class="feature-icon">{{ f.icon }}</div>
+            <div class="feature-icon" aria-hidden="true">{{ f.icon }}</div>
             <div>
               <h4>{{ f.title }}</h4>
               <p>{{ f.desc }}</p>
@@ -18,10 +18,15 @@
         </div>
       </div>
 
-      <div class="about-cards">
-        <div class="stat-card" *ngFor="let stat of stats">
-          <span class="num">{{ stat.num }}</span>
-          <span class="label">{{ stat.label }}</span>
+      <div class="about-images reveal-right">
+        <div class="about-img-main">
+          <img src="/assets/professional washing machine cleaning service.png" alt="Washing machine repair service" loading="lazy">
+        </div>
+        <div class="about-stats">
+          <div class="stat-card" *ngFor="let stat of stats">
+            <span class="num">{{ stat.num }}</span>
+            <span class="label">{{ stat.label }}</span>
+          </div>
         </div>
       </div>
     </div>

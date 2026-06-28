@@ -6,6 +6,7 @@
   z-index: 1000;
   background: transparent;
   transition: all 0.3s;
+  animation: fadeInDown 0.8s ease-out;
 
   &.scrolled {
     background: #fff;
